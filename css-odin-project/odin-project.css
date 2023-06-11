@@ -1,10 +1,22 @@
 * {
   font-family: cascadia code;
 }
+
+body {
+  margin: 0;
+}
 header {
   background-color: #1f2937;
   display: flex;
   color: white;
+}
+
+footer {
+  background-color: #1f2937;
+  padding: 6px;
+  color: #e5e7eb;
+  text-align: center;
+  margin: 0;
 }
 
 .header-logo-div {
@@ -37,6 +49,7 @@ header {
   border: none;
   color: white;
   background-color: #3882f6;
+  border-radius: 5px;
 }
 
 .div1 img {
@@ -46,6 +59,7 @@ header {
 
 .random-info-lasagna-div {
   padding: 60px;
+  font-weight: bolder;
 }
 
 .random-information {
@@ -55,6 +69,7 @@ header {
 
 .lasagna-images-div-container {
   display: flex;
+  justify-content: center;
 }
 
 .lasagna-images-div-container div {
@@ -71,18 +86,68 @@ header {
 }
 
 .inspirational-div {
-  background-color: blue;
+  background-color: #e5e7eb;
   padding: 60px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .some-inspiration {
-  background-color: aqua;
+  width: 350px;
 }
 
-.author {
-  background-color: aliceblue;
+.some-inspiration span {
+  display: flex;
+  justify-content: end;
+}
+
+.div4-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-in-div4 {
+  height: 50px;
+  width: 800px;
+  padding: 30px 20px;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  background-color: #3882f6;
+  margin: 60px 10px;
+}
+
+.call-to-action-div {
+  display: grid;
+  flex: 3;
+  justify-content: center;
+}
+
+.call-to-action {
+  color: white;
+  font-size: medium;
+  margin: 0;
+  margin-bottom: 1px;
+}
+
+.click-that-button {
+  color: #e5e7eb;
+  font-size: 10px;
+  margin: 0;
+}
+
+.second-sign-up-button-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.second-sign-up-button {
+  padding: 5px 5px;
+  width: 80px;
+  border: 1px solid white;
+  border-bottom: 1.5px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: #3882f6;
 }
