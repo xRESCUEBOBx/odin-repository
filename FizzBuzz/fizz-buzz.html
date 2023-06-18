@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!--Psuedocode for FizzBuzz
+    When a user inputs a number
+    Loop from 1 to the entered number
+    If the current number is divisible by 3 then print "Fizz"
+    If the current number is divisible by 5 then print "Buzz"
+    If the current number is divisible by 3 and 5 then print "FizzBuzz"
+    Otherwise print the current number -->
+  <body>
+    <script>
+      let answer = parseInt(prompt("Enter a number to FizzBuzz!"));
+
+      function fizzBuzz() {
+        for (let i = 1; i <= answer; i++) {
+          if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+          } else if (i % 3 === 0) {
+            console.log("Fizz");
+          } else if (i % 5 === 0) {
+            console.log("Buzz");
+          } else {
+            console.log(i);
+          }
+        }
+      }
+      fizzBuzz();
+
+      const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      const highestNumber = Math.max(...array1);
+      const lowestNumber = Math.min(...array1);
+
+      console.log(`${highestNumber} ${lowestNumber}`);
+      const thirdLargest = () => {
+        let highestNumber = Math.max(...array1);
+        let lowestNumber = Math.min(...array1);
+
+        
+      };
+    </script>
+  </body>
+</html>

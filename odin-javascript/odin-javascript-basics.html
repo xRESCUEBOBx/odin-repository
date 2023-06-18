@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Strings</h1>
+    <h2>The replaceAll() Method</h2>
+
+    <p>ES2021 intoduced the string method replaceAll().</p>
+
+    <p class="Demo">
+      "I love cats. Cats are very easy to love. Cats are very popular."
+    </p>
+    <button class="change-button-js">Change</button>
+
+    <script>
+      let a = 10;
+      console.log(9 * a);
+
+      console.log("Hello World");
+      console.log(29 + 34);
+      console.log(29 + 34 + 3938 + 7373 + 2827 + 37);
+      console.log((4 + 6 + 9) / 77);
+
+      let text = document.querySelector(".Demo");
+
+      let element = document.querySelector(".change-button-js");
+
+      element.addEventListener("click", () => {
+        if (
+          text.innerHTML ===
+          "I love cats. Cats are very easy to love. Cats are very popular."
+        ) {
+          text.innerHTML = text.replaceALL("Cats", "Dogs");
+        }
+      });
+
+      const add7 = (number) => (number += 7);
+
+      console.log(add7(7));
+
+      const multiply = (number1, number2) => {
+        const total = number1 * number2;
+        return total;
+      };
+
+      console.log(multiply(2, 2));
+
+      function capatalized(string) {
+        const newString = string.toUpperCase()[0];
+        return newString;
+      }
+
+      console.log(capatalized("string"));
+
+      function lastLetter(string2) {
+        const newString = string2.slice(-1);
+
+        return newString;
+      }
+
+      console.log(lastLetter("string2"));
+    </script>
+  </body>
+</html>
