@@ -1,62 +1,15 @@
-function getComputerMove(computerMove) {
-  let move = Math.random();
+function getComputerChoice(computerChoice) {
+  computerChoice = Math.random();
 
-  if (move <= 1 / 3) {
-    computerMove = "rock";
-  } else if (move > 1 / 3 && move <= 2 / 3) {
-    computerMove = "paper";
-  } else if (move > 2 / 3) {
-    computerMove = "scissors";
-  }
-  console.log("Computer picked " + computerMove);
-  return computerMove;
-}
-
-function getPlayerMove(playerMove) {
-  const computerMove = getComputerMove();
-  let result = "";
-
-  if (playerMove === "rock") {
-    if (computerMove === "rock") {
-      result = "Tie!";
-    } else if (computerMove === "paper") {
-      result = "You Lose!";
-    } else if (computerMove === "scissors") {
-      result = "You Win!";
-    }
-    console.log(result);
-  } else if (playerMove === "paper") {
-    if (computerMove === "rock") {
-      result = "You Win!";
-    } else if (computerMove === "paper") {
-      result = "Tie!";
-    } else if (computerMove === "scissors") {
-      result = "You Lose!";
-    }
-    console.log(result);
-  } else if (playerMove === "scissors") {
-    if (computerMove === "rock") {
-      result = "You lose!";
-    } else if (computerMove === "paper") {
-      result = "You Win!";
-    } else if (computerMove === "scissors") {
-      result = "Tie!";
-    }
-    console.log(result);
+  if (computerChoice <= 1 / 3) {
+    computerChoice = "rock";
+  } else if (computerChoice > 1 / 3 && computerChoice <= 2 / 3) {
+    computerChoice = "paper";
+  } else if (computerChoice > 2 / 3) {
+    computerChoice = "scissors";
   }
 
-  console.log("You picked " + playerMove);
-
-  return playerMove;
+  return computerChoice;
 }
 
-document.querySelector(".js-rock-button").addEventListener("click", () => {
-  getPlayerMove("rock");
-});
-
-document.querySelector(".js-paper-button").addEventListener("click", () => {
-  getPlayerMove("paper");
-});
-document.querySelector(".js-scissors-button").addEventListener("click", () => {
-  getPlayerMove("scissors");
-});
+console.log(getComputerChoice());
