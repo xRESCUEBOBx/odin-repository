@@ -5,6 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      html {
+        width: 100%;
+        height: inherit;
+        background: #ddd;
+      }
+
+      canvas {
+        display: block;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .update-button {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+    </style>
   </head>
   <body>
     <h1>JavaScript Strings</h1>
@@ -16,6 +37,8 @@
       "I love cats. Cats are very easy to love. Cats are very popular."
     </p>
     <button class="change-button-js">Change</button>
+    <button class="update-button">Update</button>
+    <canvas></canvas>
 
     <script>
       let a = 10;
@@ -64,6 +87,37 @@
       }
 
       console.log(lastLetter("string2"));
+
+      const btn = document.querySelector(".update-button");
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        canvas.width = document.documentElement.clientWidth;
+        canvas.height = document.documentElement.clientHeight;
+      });
+
+      function random(number) {
+        return Math.floor(Math.random() * number);
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < 1000; i++) {
+          ctx.beginPath();
+          ctx.fillStyle = "rgba(255,0,0,0.5)";
+          ctx.arc(
+            random(canvas.width),
+            random(canvas.height),
+            random(50),
+            0,
+            2 * Math.PI
+          );
+          ctx.fill();
+        }
+      }
+
+      btn.addEventListener("click", draw);
     </script>
   </body>
 </html>
