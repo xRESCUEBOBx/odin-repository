@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rock-button-js {
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+  border-radius: 75px;
+}
+
+.paper-button-js {
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+  border-radius: 75px;
+}
+
+.scissors-button-js {
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+  border-radius: 75px;
+}
