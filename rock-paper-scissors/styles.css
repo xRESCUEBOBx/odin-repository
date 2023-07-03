@@ -10,6 +10,7 @@ body {
   width: 150px;
   margin: 15px;
   border-radius: 75px;
+  background-color: beige;
 }
 
 .paper-button-js {
@@ -17,6 +18,7 @@ body {
   width: 150px;
   margin: 15px;
   border-radius: 75px;
+  background-color: beige;
 }
 
 .scissors-button-js {
@@ -24,4 +26,5 @@ body {
   width: 150px;
   margin: 15px;
   border-radius: 75px;
+  background-color: beige;
 }

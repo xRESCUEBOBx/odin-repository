@@ -117,6 +117,7 @@ function playGame(playerSelection, computerSelection) {
 
   return result;
 }
+
 /*
 for (let i = 0; i <= 100; i++) {
   playGame();
