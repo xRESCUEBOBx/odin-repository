@@ -95,7 +95,7 @@ function playGame(playerSelection, computerSelection) {
     computerScore++;
   }
 
-  resultDiv.textContent = `You picked ${playerSelection}, 
+  resultDiv.textContent = `You picked ${playerSelection},
   computer picked ${computerSelection}.
   The Score is currently
   player:${playerScore} 

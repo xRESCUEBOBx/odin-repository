@@ -1,0 +1,18 @@
+.div-elements-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.div-elements {
+  background-color: rgb(39, 39, 48);
+  margin: 0;
+  padding: 0;
+}
+
+.div-elements.drawn {
+  background-color: rgb(255, 179, 0);
+}
