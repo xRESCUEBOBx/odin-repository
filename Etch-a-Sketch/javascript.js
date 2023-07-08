@@ -2,8 +2,9 @@ const divElements = [];
 const divElementsContainer = document.createElement("div");
 document.body.appendChild(divElementsContainer);
 divElementsContainer.classList.add("div-elements-container");
-const buttonElement = document.querySelector("button");
+const inputElement = document.querySelector(".js-input");
 
+/*
 buttonElement.addEventListener("click", () => {
   switch (true) {
     case divElementsContainer.classList.contains("div-elements-container"):
@@ -28,31 +29,45 @@ buttonElement.addEventListener("click", () => {
       break;
   }
 });
+*/
 
-for (let i = 0; i <= 255; i++) {
-  const div = document.createElement("div");
-  div.classList.add("div-elements");
-  divElements.push(div);
-  // Start drawing on mousedown
-  div.addEventListener("mousedown", () => {
-    isDrawing = true;
-  });
+function createGrid(gridSize) {
+  let amount = inputElement.value * inputElement.value;
+  divElementsContainer.style.display = `grid`;
+  divElementsContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+  divElementsContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
 
-  // Stop drawing on mouseup
-  div.addEventListener("mouseup", () => {
-    isDrawing = false;
-  });
+  for (let i = 0; i <= amount; i++) {
+    const div = document.createElement("div");
+    div.classList.add("div-elements");
+    divElements.push(div);
+    // Start drawing on mousedown
+    div.addEventListener("mousedown", () => {
+      isDrawing = true;
+    });
 
-  // Draw on mouseover if drawing state is true
-  div.addEventListener("mouseover", function () {
-    if (isDrawing) {
-      this.classList.add("drawn");
-      // Add the "drawn" class
-    } else {
-      this.classList.remove("drawn");
-    }
-  });
+    // Stop drawing on mouseup
+    div.addEventListener("mouseup", () => {
+      isDrawing = false;
+    });
+
+    // Draw on mouseover if drawing state is true
+    div.addEventListener("mouseover", function () {
+      if (isDrawing) {
+        this.classList.add("drawn");
+        // Add the "drawn" class
+      } else {
+        this.classList.remove("drawn");
+      }
+    });
+  }
+  for (let i = 0; i <= amount; i++) {
+    divElementsContainer.appendChild(divElements[i]);
+  }
 }
-for (let i = 0; i <= 255; i++) {
-  divElementsContainer.appendChild(divElements[i]);
-}
+
+inputElement.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    createGrid(inputElement.value);
+  }
+});

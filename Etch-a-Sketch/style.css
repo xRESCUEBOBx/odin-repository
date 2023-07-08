@@ -8,8 +8,6 @@ body {
 .div-elements-container {
   height: 700px;
   width: 700px;
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
   margin: 0;
   padding: 0;
   border: 5px solid gold;
@@ -21,44 +19,4 @@ body {
 
 .div-elements.drawn {
   background-color: rgb(250, 67, 1);
-}
-
-.size2 {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  margin: 0;
-  padding: 0;
-  border: 5px solid gold;
-  height: 300px;
-  width: 300px;
-}
-
-.size3 {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  margin: 0;
-  padding: 0;
-  border: 5px solid gold;
-  height: 500px;
-  width: 500px;
-}
-
-.size4 {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  margin: 0;
-  padding: 0;
-  border: 5px solid gold;
-  height: 900px;
-  width: 900px;
-}
-
-.size5 {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  margin: 0;
-  padding: 0;
-  border: 5px solid gold;
-  height: 1100px;
-  width: 1100px;
 }
