@@ -3,8 +3,8 @@ const divElementsContainer = document.createElement("div");
 document.body.appendChild(divElementsContainer);
 divElementsContainer.classList.add("div-elements-container");
 const inputElement = document.querySelector(".js-input");
+const buttonElement = document.querySelector("button");
 
-/*
 buttonElement.addEventListener("click", () => {
   switch (true) {
     case divElementsContainer.classList.contains("div-elements-container"):
@@ -29,7 +29,6 @@ buttonElement.addEventListener("click", () => {
       break;
   }
 });
-*/
 
 function createGrid(gridSize) {
   let amount = inputElement.value * inputElement.value;

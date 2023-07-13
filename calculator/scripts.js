@@ -1,6 +1,16 @@
-let firstOperand = 0;
-let operator;
-let secondOperand = 0;
+let firstOperand = null;
+let operator = null;
+let secondOperand = null;
+const displayElement = document.querySelector(".display");
+const buttonElements = document.querySelectorAll("button");
+
+for (let button of buttonElements) {
+  button.addEventListener("click", () => {
+    if (/\d/.test(button.textContent)) {
+      displayElement.textContent += button.textContent;
+    }
+  });
+}
 
 const add = function (a, b) {
   return a + b;
