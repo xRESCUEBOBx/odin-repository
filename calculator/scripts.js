@@ -7,6 +7,7 @@ let result = null;
 const displayElement = document.querySelector(".display");
 const clearButton = document.querySelector(".clear");
 const equalButton = document.querySelector(".equals");
+const plusMinusButton = document.querySelector(".plusMinus");
 
 const operatorButtons = document.querySelectorAll(".operator");
 const numberButtons = document.querySelectorAll(
@@ -53,7 +54,6 @@ equalButton.addEventListener("click", () => {
     secondOperand = null;
   }
 });
-const plusMinusButton = document.querySelector(".plusMinus");
 
 plusMinusButton.addEventListener("click", () => {
   if (displayElement.textContent !== "") {

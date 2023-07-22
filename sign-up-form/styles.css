@@ -1,0 +1,50 @@
+main {
+  display: flex;
+}
+
+.logo-pic-container {
+  background-color: rgb(20, 90, 152);
+  flex: 1;
+  display: flex;
+}
+
+.logo-container {
+  background-color: aliceblue;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  background-color: black;
+}
+
+.rhino-pic {
+  height: 250px;
+  object-fit: fill;
+}
+
+.sign-up-info-container {
+  flex: 1.7;
+  display: flex;
+  flex-direction: column;
+  border: solid gold 5px;
+  justify-content: space-between;
+  height: 900px;
+}
+
+.sign-up-paragraphs {
+  background-color: rgb(138, 4, 4);
+  flex: 1fr;
+}
+
+.sign-up-form-container {
+  background-color: blue;
+  flex: 2fr;
+}
+
+.create-account-container {
+  background-color: rebeccapurple;
+  flex: 1fr;
+}

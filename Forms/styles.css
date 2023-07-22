@@ -1,0 +1,33 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* Replace the default calendar icon with a custom one */
+  background-image: url("");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  opacity: 0.7; /* Adjust the opacity to your liking */
+  cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* Add a background color to the date picker popup */
+  background-color: #f1f1f1;
+  /* Add a box shadow for a raised effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Add padding to the popup to give it some space */
+  padding: 10px;
+  /* Adjust the width and height to resize the popup */
+  width: 220px;
+  height: 240px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #910000; /* Set the text color of the days */
+  /* Add any other custom styling you desire for the days */
+}
+
+/* Styling the calendar header (month and year) */
+/* Note: This may not work consistently across browsers */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* Set the font size and font family for the header */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  /* Add any other custom styling you desire for the header */
+}
