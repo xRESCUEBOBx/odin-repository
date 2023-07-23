@@ -27,50 +27,112 @@
         <div class="logo-image">
           <div class="logo-container">
             <img src="./images/odin-lined.png" alt="" srcset="" class="logo" />
+            <p>ODIN</p>
           </div>
           <img
-            src="./images/redcharlie-redcharlie1-xtvo0ffGKlI-unsplash.jpg"
-            alt="rhinos"
-            class="rhino-pic"
+            src="./images/halie-west-25xggax4bSA-unsplash.jpg"
+            alt="leaves"
+            class="leaf-pic"
           />
+          
+          <p class="photo-cred">Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+        
         </div>
+       
       </div>
       <div class="sign-up-info-container">
         <div class="sign-up-paragraphs">
-          <p>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your depressed. Sign up now
-            losers.
+          <p class="first-paragraph">
+            This is not a real online service! You know you need something<br />
+            like this in your life to help you realize your depressed.
+            <br />Sign up now losers.
           </p>
-          <p>You know you want to..</p>
+          <p class="second-paragraph">You <i>know</i> you want to...</i></p>
         </div>
 
         <div class="sign-up-form-container">
-          <form action="">
-            <legend>Let's do this!</legend>
-            <div class="sign-up-form-names">
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name" />
-              <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name" />
+          <form action="" id="sign-up-form">
+            <div class="legend">
+              <legend>Let's do this!</legend>
             </div>
-            <div class="sign-up-form-email-phone">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
-              <label for="phone">PHONE NUMBER</label>
-              <input type="tel" name="phone" id="phone" />
-            </div>
-            <div class="sign-up-form-credentials">
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
-              <label for="password">CONFIRM PASSWORD</label>
-              <input type="tel" name="password" id="password" />
+            <div class="form-grid">
+              <div class="row-container">
+                <div class="first-row">
+                  <div class="first-name">
+                    <label for="first-name">FIRST NAME</label>
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      class="first-name-input"
+                      required
+
+                    />
+                  </div>
+                  <div class="email">
+                    <label for="email">EMAIL</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="email-input"
+                      required
+
+                    />
+                  </div>
+                  <div class="password">
+                    <label for="password">PASSWORD</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="password-input"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="second-row">
+                  <div class="last-name">
+                    <label for="last-name">LAST NAME</label>
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      class="last-name-input"
+                      required
+
+                    />
+                  </div>
+
+                  <div class="phone-number">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      class="phone-number-input"
+                    />
+                  </div>
+
+                  <div class="confirm-password">
+                    <label for="password">CONFIRM PASSWORD</label>
+                    <input
+                      type="password"
+                      name="confirm-password"
+                      id="confirm-password"
+                      class="confirm-password-input"
+                      required
+                    />
+                    <div class="error-message" id="confirm-password-error"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
         <div class="create-account-container">
           <div>
-            <button>Create Account</button>
+            <button class="create-account-button" type="submit" form="sign-up-form">Create Account</button>
             <p>Already have an account? <a href="http://">Log In</a></p>
           </div>
         </div>
