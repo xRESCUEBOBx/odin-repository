@@ -16,7 +16,9 @@
     />
 
     <!-- CSS Files Links -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./sidebar.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./main.css" />
 
     <!-- Title -->
     <title>Admin Dashboard</title>
@@ -24,8 +26,71 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="header-container1"></div>
-        <div class="header-container2"></div>
+        <div class="header-container1">
+          <div class="header-container1-row1">
+            <div class="header-container1-row1-col1">
+              <label for="input"
+                ><img
+                  src="./images/magnify.svg"
+                  alt="Search Icon"
+                  srcset=""
+                  class="search"
+              /></label>
+            </div>
+            <div class="header-container1-row1-col2">
+              <input type="search" name="input" id="input" />
+            </div>
+          </div>
+          <div class="header-container1-row2">
+            <div class="header-container1-row2-col1">
+              <img
+                src="./images/account-circle.svg"
+                alt="Profile Pic"
+                srcset=""
+                class="profile-icon1"
+              />
+            </div>
+            <div class="header-container1-row2-col2">
+              <div class="header-container1-row2-col2-row1">Hi there,</div>
+              <div class="header-container1-row2-col2-row2">
+                Morgan Oakley (@morgan)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-container2">
+          <div class="header-container2-row1">
+            <div class="header-container2-row1-col1">
+              <img
+                src="./images/bell-ring.svg"
+                alt="Notify Image"
+                srcset=""
+                class="notify-icon"
+              />
+            </div>
+            <div class="header-container2-row1-col2">
+              <img
+                src="./images/account-circle.svg"
+                alt="Profile Pic"
+                srcset=""
+                class="profile-icon2"
+              />
+            </div>
+            <div class="header-container2-row1-col3">Morgan Oakley</div>
+          </div>
+          <div class="header-container2-row2">
+            <div class="header-container2-row2-col1">
+              <button class="button">New</button>
+            </div>
+            <div class="header-container2-row2-col2">
+              <button class="button">Upload</button>
+            </div>
+            <div class="header-container2-row2-col3">
+              <button class="button">Share</button>
+            </div>
+          </div>
+        </div>
       </header>
 
       <nav class="sidebar">
@@ -147,7 +212,324 @@
         </div>
       </nav>
 
-      <main class="main">Main</main>
+      <main class="main">
+        <div class="main-row1">
+          <div class="main-row1-col1">Your Projects</div>
+          <div class="main-row1-col2">Announcements</div>
+        </div>
+
+        <div class="main-row2">
+          <div class="main-row2-col1">
+            <div class="main-row2-col1-row1">
+              <div class="main-row2-col1-row1-row1">Super Cool Project</div>
+              <div class="main-row2-col1-row1-row2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+              <div class="main-row2-col1-row1-row3">
+                <div class="main-row2-col1-row1-row3-col1">
+                  <img
+                    src="./images/star-plus-outline.svg"
+                    alt="Star Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col1-row1-row3-col2">
+                  <img
+                    src="./images/eye-plus-outline.svg"
+                    alt="Eye Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col1-row1-row3-col3">
+                  <img
+                    src="./images/source-fork.svg"
+                    alt="Source Fork Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="main-row2-col1-row2">
+              <div class="main-row2-col1-row2-row1">Super Cool Project</div>
+              <div class="main-row2-col1-row2-row2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud.
+              </div>
+              <div class="main-row2-col1-row2-row3">
+                <div class="main-row2-col1-row2-row3-col1">
+                  <img
+                    src="./images/star-plus-outline.svg"
+                    alt="Star Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col1-row2-row3-col2">
+                  <img
+                    src="./images/eye-plus-outline.svg"
+                    alt="Eye Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col1-row2-row3-col3">
+                  <img
+                    src="./images/source-fork.svg"
+                    alt="Source Fork Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="main-row2-col1-row3">
+              <div class="main-row2-col1-row3-row1">Super Cool Project</div>
+              <div class="main-row2-col1-row3-row2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut.
+              </div>
+              <div class="main-row2-col1-row3-row3">
+                <div class="main-row2-col1-row3-row3-col1">
+                  <img
+                    src="./images/star-plus-outline.svg"
+                    alt="Star Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col1-row3-row3-col2">
+                  <img
+                    src="./images/eye-plus-outline.svg"
+                    alt="Eye Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col1-row3-row3-col3">
+                  <img
+                    src="./images/source-fork.svg"
+                    alt="Source Fork Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-row2-col2">
+            <div class="main-row2-col2-row1">
+              <div class="main-row2-col2-row1-row1">Super Cool Project</div>
+              <div class="main-row2-col2-row1-row2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation.
+              </div>
+              <div class="main-row2-col2-row1-row3">
+                <div class="main-row2-col2-row1-row3-col1">
+                  <img
+                    src="./images/star-plus-outline.svg"
+                    alt="Star Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col2-row1-row3-col2">
+                  <img
+                    src="./images/eye-plus-outline.svg"
+                    alt="Eye Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col2-row1-row3-col3">
+                  <img
+                    src="./images/source-fork.svg"
+                    alt="Source Fork Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="main-row2-col2-row2">
+              <div class="main-row2-col2-row2-row1">Super Cool Project</div>
+              <div class="main-row2-col2-row2-row2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </div>
+              <div class="main-row2-col2-row2-row3">
+                <div class="main-row2-col2-row2-row3-col1">
+                  <img
+                    src="./images/star-plus-outline.svg"
+                    alt="Star Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col2-row2-row3-col2">
+                  <img
+                    src="./images/eye-plus-outline.svg"
+                    alt="Eye Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col2-row2-row3-col3">
+                  <img
+                    src="./images/source-fork.svg"
+                    alt="Source Fork Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="main-row2-col2-row3">
+              <div class="main-row2-col2-row3-row1">Super Cool Project</div>
+              <div class="main-row2-col2-row3-row2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+              <div class="main-row2-col2-row3-row3">
+                <div class="main-row2-col2-row3-row3-col1">
+                  <img
+                    src="./images/star-plus-outline.svg"
+                    alt="Star Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col2-row3-row3-col2">
+                  <img
+                    src="./images/eye-plus-outline.svg"
+                    alt="Eye Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+                <div class="main-row2-col2-row3-row3-col3">
+                  <img
+                    src="./images/source-fork.svg"
+                    alt="Source Fork Icon"
+                    srcset=""
+                    class="main-icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-row2-col3">
+            <div class="main-row2-col3-row1">
+              <div class="main-row2-col3-row1-row1">
+                <div class="main-row2-col3-row1-row1-row1">
+                  Site Maintenance
+                </div>
+                <div class="main-row2-col3-row1-row1-row2">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </div>
+              </div>
+              <div class="main-row2-col3-row1-row2">
+                <div class="main-row2-col3-row1-row2-row1">
+                  Community Share Day
+                </div>
+                <div class="main-row2-col3-row1-row2-row2">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </div>
+              </div>
+              <div class="main-row2-col3-row1-row3">
+                <div class="main-row2-col3-row1-row3-row1">
+                  Updated Privacy Policy
+                </div>
+                <div class="main-row2-col3-row1-row3-row2">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </div>
+              </div>
+            </div>
+            <div class="main-row2-col3-row2">Trending</div>
+            <div class="main-row2-col3-row3">
+              <div class="main-row2-col3-row3-row1">
+                <div class="main-row2-col3-row3-row1-col1">
+                  <img
+                    src="./images/account-circle.svg"
+                    alt="Profile Icon"
+                    srcset=""
+                    class="profile-icon2"
+                  />
+                </div>
+                <div class="main-row2-col3-row3-row1-col2">
+                  <div class="main-row2-col3-row3-row1-col2-row1">@tegan</div>
+                  <div class="main-row2-col3-row3-row1-col2-row2">
+                    World Peace Builder
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-row2-col3-row3-row2">
+                <div class="main-row2-col3-row3-row2-col1">
+                  <img
+                    src="./images/account-circle.svg"
+                    alt="Profile Icon"
+                    srcset=""
+                    class="profile-icon2"
+                  />
+                </div>
+
+                <div class="main-row2-col3-row3-row1-col2">
+                  <div class="main-row2-col3-row3-row2-col2-row1">@morgan</div>
+                  <div class="main-row2-col3-row3-row2-col2-row2">
+                    Super Cool Project
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-row2-col3-row3-row3">
+                <div class="main-row2-col3-row3-row3-col1">
+                  <img
+                    src="./images/account-circle.svg"
+                    alt="Profile Icon"
+                    srcset=""
+                    class="profile-icon2"
+                  />
+                </div>
+                <div class="main-row2-col3-row3-row1-col2">
+                  <div class="main-row2-col3-row3-row3-col2-row1">@kendall</div>
+                  <div class="main-row2-col3-row3-row3-col2-row2">
+                    Life Changing App
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-row2-col3-row3-row4">
+                <div class="main-row2-col3-row3-row4-col1">
+                  <img
+                    src="./images/account-circle.svg"
+                    alt="Profile Icon"
+                    srcset=""
+                    class="profile-icon2"
+                  />
+                </div>
+                <div class="main-row2-col3-row3-row1-col2">
+                  <div class="main-row2-col3-row3-row4-col2-row1">@alex</div>
+                  <div class="main-row2-col3-row3-row4-col2-row2">
+                    No Traffic Maker
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <noscript>Your browser don't support JavaScript!</noscript>
     <script src="./scripts.js"></script>

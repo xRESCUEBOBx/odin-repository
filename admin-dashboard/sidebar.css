@@ -1,26 +1,8 @@
-* {
-  margin: 0;
-}
-
-.container {
-  display: grid;
-  grid-template:
-    "sidebar header" 200px
-    "sidebar main" auto
-    / [col-start] 1fr [col1] 5.5fr [col-end];
-  height: 100vh;
-}
-
-.header {
-  background-color: whitesmoke;
-  grid-area: header;
-}
-
 .sidebar {
-  background-color: rgb(47, 133, 246);
+  background-color: rgb(29, 161, 242);
   grid-area: sidebar;
   display: grid;
-  grid-template-rows: 0.7fr 3fr 5fr;
+  grid-template-rows: 0.7fr 3fr 10fr;
   padding: 6px 12px;
   row-gap: 30px;
 }
@@ -83,9 +65,4 @@
 .sidebar-container3 {
   display: grid;
   grid-template-rows: 50px 50px 50px;
-}
-
-.main {
-  background-color: rgb(237, 234, 234);
-  grid-area: main;
 }
