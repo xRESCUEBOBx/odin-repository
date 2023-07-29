@@ -6,9 +6,6 @@ main {
   height: 100vh;
 }
 
-.invalid {
-  border: 1px solid red;
-}
 
 .logo-pic-container {
   background-color: rgb(20, 90, 152);
