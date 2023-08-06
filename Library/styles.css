@@ -1,0 +1,8 @@
+* {
+  font-family: cascadia code;
+}
+
+.form-buttons-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}

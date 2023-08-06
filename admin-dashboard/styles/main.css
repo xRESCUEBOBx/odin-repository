@@ -3,6 +3,10 @@
   font-family: cascadia code;
 }
 
+.icon {
+  cursor: pointer;
+}
+
 .container {
   display: grid;
   grid-template:
@@ -35,10 +39,11 @@
 }
 .main-row1-col2 {
   display: grid;
-  padding-left: 22px;
   align-content: end;
+  justify-content: left;
   font-weight: 600;
   font-size: 18px;
+  padding-left: 40px;
 }
 .main-row2 {
   display: grid;
@@ -108,7 +113,7 @@
   display: grid;
   grid-template-rows: 5fr 1fr 5fr;
   row-gap: 10px;
-  padding: 20px 20px;
+  padding: 8px 20px;
 }
 .main-row2-col3-row1 {
   background-color: whitesmoke;
@@ -116,6 +121,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 15px;
   padding: 25px;
+  border-radius: 12px;
 }
 .main-row2-col3-row1-row1,
 .main-row2-col3-row1-row2 {
@@ -133,12 +139,14 @@
   align-content: end;
   font-size: 18px;
   font-weight: 600;
+  border-radius: 12px;
 }
 .main-row2-col3-row3 {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
   background-color: whitesmoke;
+  border-radius: 12px;
 }
 .main-row2-col3-row3-row1,
 .main-row2-col3-row3-row2,
