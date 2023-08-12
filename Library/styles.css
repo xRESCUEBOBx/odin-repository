@@ -2,7 +2,107 @@
   font-family: cascadia code;
 }
 
-.form-buttons-container {
+body {
+  margin: 0;
+}
+
+.page-container {
+  border: 1px solid black;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template: "header" 15vh "main" 80vh "footer" 5vh;
+}
+
+.header {
+  background-color: peru;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.main {
+  background-color: aqua;
+  display: grid;
+  border: 3px solid green;
+  grid-template: "button" 30% "form" 70%;
+}
+
+.button-form-container {
+  border: 5px solid rebeccapurple;
+  display: grid;
+}
+
+.button-form-container > div {
+  border: 2px solid gold;
+  display: flex;
+  flex-direction: row;
+}
+.h3-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: linear-gradient(
+    to right,
+    #241d1d,
+    #fd0606,
+    #292626,
+    #9c2424,
+    #fd0606
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-fill-color: transparent;
+}
+.add-books-div {
+  padding-top: 12px;
+  padding-left: 8px;
+  border: 2px solid lawngreen;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.js-add-books {
+  width: fit-content;
+  height: fit-content;
+}
+
+.js-form {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid green;
+}
+
+.title-container {
+  border: 3px solid rgb(126, 6, 6);
+  flex: 1;
+}
+.author-container {
+  border: 3px solid rgb(126, 6, 6);
+  flex: 1;
+}
+.pages-container {
+  border: 3px solid rgb(126, 6, 6);
+  flex: 1;
+}
+.read-container {
+  border: 3px solid rgb(126, 6, 6);
+  flex: 1;
+}
+.form-buttons-container {
+  border: 3px solid rgb(126, 6, 6);
+  flex: 1;
+}
+
+.js-form button {
+  width: fit-content;
+}
+
+.footer {
+  background-color: coral;
 }
